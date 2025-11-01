@@ -1,5 +1,4 @@
 import { Dialog } from "radix-ui";
-import { Link } from "react-router";
 
 export default function About() {
 	return (
@@ -45,12 +44,12 @@ export default function About() {
 
 					<aside className="space-y-4 md:col-span-1">
 						<nav className="flex flex-col gap-3">
-							<Link
+							{/* <Link
 								className="block px-4 py-2 text-start font-medium text-sm hover:bg-stone-100 dark:hover:bg-white/10"
-								to="/work"
+								to="/works"
 							>
-								Work
-							</Link>
+								Works
+							</Link> */}
 
 							{/* Contact modal using Radix Dialog */}
 							<Dialog.Root>
