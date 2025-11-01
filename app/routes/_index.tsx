@@ -65,18 +65,65 @@ export default function About() {
 									<Dialog.Overlay className="fixed inset-0 bg-black/40" />
 									<Dialog.Content className="-translate-x-1/2 -translate-y-1/2 fixed top-1/2 left-1/2 w-[min(90vw,420px)] border border-stone-200 bg-white p-6 shadow-lg dark:border-stone-700 dark:bg-stone-900">
 										<Dialog.Title className="font-semibold text-lg">
-											Email or X
+											Contact me
 										</Dialog.Title>
-										{/* <Dialog.Description className="text-sm text-stone-600 dark:text-stone-300 mt-2">
-                      Short and to the point — email or X.
-                    </Dialog.Description> */}
+										<Dialog.Description className="mt-2 text-mono text-sm text-stone-600 dark:text-stone-300">
+											projects · collaborations · discussion
+										</Dialog.Description>
 
 										<div className="mt-4 space-y-2 text-sm">
-											<div>
-												<strong>Email:</strong> limavfabio@gmail.com
+											<div className="flex items-center">
+												<img
+													className="me-4"
+													height="16"
+													width="16"
+													src="RemixIcon_SVG_2511011624/mail-line.svg"
+													alt="Email"
+												/>
+												<a
+													className="hover:underline"
+													target="_blank"
+													rel="noopener noreferrer"
+													href="mailto:limavfabio@gmail.com"
+												>
+													limavfabio@gmail.com
+												</a>
 											</div>
-											<div>
-												<strong>X:</strong> @limavfabio
+
+											<div className="flex items-center">
+												<img
+													className="me-4"
+													height="16"
+													width="16"
+													src="RemixIcon_SVG_2511011624/github-fill.svg"
+													alt="GitHub"
+												/>
+												<a
+													className="hover:underline"
+													target="_blank"
+													rel="noopener noreferrer"
+													href="https://github.com/limavfabio"
+												>
+													limavfabio
+												</a>
+											</div>
+
+											<div className="flex items-center">
+												<img
+													className="me-4"
+													height="16"
+													width="16"
+													src="RemixIcon_SVG_2511011624/twitter-x-line.svg"
+													alt="X"
+												/>
+												<a
+													className="hover:underline"
+													target="_blank"
+													rel="noopener noreferrer"
+													href="https://x.com/limavfabio"
+												>
+													@limavfabio
+												</a>
 											</div>
 										</div>
 
@@ -96,7 +143,7 @@ export default function About() {
 						</nav>
 
 						<div className="border-stone-100 border-t pt-4 dark:border-stone-800">
-							<div className="text-stone-500 text-xs">Focused stack</div>
+							<div className="text-stone-500 text-xs">Technology stack</div>
 							<div className="mt-2 font-mono text-sm text-stone-700 dark:text-stone-200">
 								Ruby · Rails · TypeScript · Go
 							</div>
