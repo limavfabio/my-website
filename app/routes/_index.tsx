@@ -1,4 +1,3 @@
-
 import { Dialog } from "radix-ui";
 
 export default function About() {
@@ -42,7 +41,7 @@ export default function About() {
           <aside className="md:col-span-1 space-y-4">
             <nav className="flex flex-col gap-3">
               <a
-                className="block px-4 py-2 font-medium text-sm hover:bg-stone-100 dark:hover:bg-white/10"
+                className="text-start block px-4 py-2 font-medium text-sm hover:bg-stone-100 dark:hover:bg-white/10"
                 href="#work"
               >
                 Work
@@ -51,7 +50,7 @@ export default function About() {
               {/* Contact modal using Radix Dialog */}
               <Dialog.Root>
                 <Dialog.Trigger asChild>
-                  <button className="text-center block cursor-pointer px-4 py-2 font-medium text-sm hover:bg-stone-100 dark:hover:bg-white/10">
+                  <button className="text-start block cursor-pointer px-4 py-2 font-medium text-sm hover:bg-stone-100 dark:hover:bg-white/10">
                     Contact
                   </button>
                 </Dialog.Trigger>
