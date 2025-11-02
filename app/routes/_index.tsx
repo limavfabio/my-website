@@ -1,4 +1,5 @@
 import { Dialog } from "radix-ui";
+import Icon from "@/components/icon";
 
 export default function About() {
 	return (
@@ -73,15 +74,7 @@ export default function About() {
 
 										<div className="mt-4 space-y-3 text-sm">
 											<div className="flex items-center">
-												<div
-													className="me-4 h-5 w-5 shrink-0 bg-stone-900 dark:bg-stone-50"
-													style={{
-														maskImage: "url(app/assets/icons/mail.svg)",
-														maskSize: "contain",
-														maskRepeat: "no-repeat",
-														maskPosition: "center",
-													}}
-												/>
+												<Icon name="mail" />
 												<a
 													className="hover:underline"
 													target="_blank"
