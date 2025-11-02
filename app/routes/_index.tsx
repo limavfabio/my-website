@@ -1,7 +1,8 @@
 import { Dialog } from "radix-ui";
-import Icon from "@/components/icon";
 import { Link } from "react-router";
-
+import Github from "@/assets/icons/github.svg?react";
+import Mail from "@/assets/icons/mail.svg?react";
+import X from "@/assets/icons/x.svg?react";
 export default function About() {
 	return (
 		<main className="min-h-screen bg-white text-stone-900 dark:bg-black dark:text-stone-50">
@@ -75,15 +76,7 @@ export default function About() {
 
 										<div className="mt-4 space-y-3 text-sm">
 											<div className="flex items-center">
-												<div
-													className="me-4 h-5 w-5 shrink-0 bg-stone-900 dark:bg-stone-50"
-													style={{
-														maskImage: "url(app/assets/icons/mail.svg)",
-														maskSize: "contain",
-														maskRepeat: "no-repeat",
-														maskPosition: "center",
-													}}
-												/>
+												<Mail className="me-4 h-5 w-5 fill-stone-900 dark:fill-stone-50" />
 												<a
 													className="hover:underline"
 													target="_blank"
@@ -95,15 +88,7 @@ export default function About() {
 											</div>
 
 											<div className="flex items-center">
-												<div
-													className="me-4 h-5 w-5 shrink-0 bg-stone-900 dark:bg-stone-50"
-													style={{
-														maskImage: "url(app/assets/icons/github.svg)",
-														maskSize: "contain",
-														maskRepeat: "no-repeat",
-														maskPosition: "center",
-													}}
-												/>
+												<Github className="me-4 h-5 w-5 fill-stone-900 dark:fill-stone-50" />
 												<a
 													className="hover:underline"
 													target="_blank"
@@ -115,15 +100,7 @@ export default function About() {
 											</div>
 
 											<div className="flex items-center">
-												<div
-													className="me-4 h-5 w-5 shrink-0 bg-stone-900 dark:bg-stone-50"
-													style={{
-														maskImage: "url(app/assets/icons/x.svg)",
-														maskSize: "contain",
-														maskRepeat: "no-repeat",
-														maskPosition: "center",
-													}}
-												/>
+												<X className="me-4 h-5 w-5 fill-stone-900 dark:fill-stone-50" />
 												<a
 													className="hover:underline"
 													target="_blank"
@@ -139,7 +116,7 @@ export default function About() {
 											<Dialog.Close asChild>
 												<button
 													type="button"
-													className="border px-3 py-1 text-sm"
+													className="cursor-pointer border px-3 py-1 text-sm"
 												>
 													Close
 												</button>
