@@ -1,6 +1,7 @@
 import { Dialog } from "radix-ui";
 import { Link } from "react-router";
-import { Github, Mail, X } from "lucide-react";
+import { GitHubLogoIcon, EnvelopeClosedIcon } from "@radix-ui/react-icons";
+import { FaXTwitter } from "react-icons/fa6";
 import type { Route } from "./+types/_index";
 
 export function meta() {
@@ -30,7 +31,7 @@ export default function Index({ loaderData }: Route.ComponentProps) {
           </div>
         </header>
 
-        <p className="text-red">{loaderData.message}</p>
+        <p className="text-green-500">{loaderData.message}</p>
 
         {/* Content */}
         <section className="mt-12 grid grid-cols-1 items-start gap-8 md:grid-cols-3">
@@ -89,7 +90,7 @@ export default function Index({ loaderData }: Route.ComponentProps) {
 
                     <div className="mt-4 space-y-3 text-sm">
                       <div className="flex items-center">
-                        <Mail className="me-4 h-5 w-5 text-stone-900 dark:text-stone-50" />
+                        <EnvelopeClosedIcon className="me-4 h-4 w-4 text-stone-900 dark:text-stone-50" />
                         <a
                           className="hover:underline"
                           target="_blank"
@@ -101,7 +102,7 @@ export default function Index({ loaderData }: Route.ComponentProps) {
                       </div>
 
                       <div className="flex items-center">
-                        <Github className="me-4 h-5 w-5 text-stone-900 dark:text-stone-50" />
+                        <GitHubLogoIcon className="me-4 h-4 w-4 text-stone-900 dark:text-stone-50" />
                         <a
                           className="hover:underline"
                           target="_blank"
@@ -113,7 +114,7 @@ export default function Index({ loaderData }: Route.ComponentProps) {
                       </div>
 
                       <div className="flex items-center">
-                        <X className="me-4 h-5 w-5 text-stone-900 dark:text-stone-50" />
+                        <FaXTwitter className="mt-0.5 me-4 h-5 w-4 text-stone-900 dark:text-stone-50" />
                         <a
                           className="hover:underline"
                           target="_blank"
