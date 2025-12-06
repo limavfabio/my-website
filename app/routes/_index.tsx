@@ -17,7 +17,7 @@ export function loader({ context }: Route.LoaderArgs) {
 
 export default function Index({ loaderData }: Route.ComponentProps) {
   return (
-    <main className="min-h-screen bg-white text-stone-900 dark:bg-black dark:text-stone-50">
+    <main className="min-h-screen bg-white text-zinc-900 dark:bg-black dark:text-zinc-50">
       <div className="mx-auto max-w-4xl px-6 py-20">
         {/* Header */}
         <header className="flex items-start justify-between">
@@ -25,7 +25,7 @@ export default function Index({ loaderData }: Route.ComponentProps) {
             <h1 className="font-extrabold text-6xl uppercase leading-none tracking-tight">
               FABIO LIMA
             </h1>
-            <p className="font-medium text-sm text-stone-600 dark:text-stone-300">
+            <p className="font-medium text-sm text-zinc-600 dark:text-zinc-300">
               Developer — fullstack systems, tooling, and APIs.
             </p>
           </div>
@@ -36,7 +36,7 @@ export default function Index({ loaderData }: Route.ComponentProps) {
         {/* Content */}
         <section className="mt-12 grid grid-cols-1 items-start gap-8 md:grid-cols-3">
           <div id="work" className="md:col-span-2">
-            <div className="prose prose-stone dark:prose-invert max-w-none">
+            <div className="prose prose-zinc dark:prose-invert max-w-none">
               <p className="text-lg">
                 I build raw, focused web experiences —
                 <span className="block font-mono text-base opacity-75">
@@ -62,7 +62,7 @@ export default function Index({ loaderData }: Route.ComponentProps) {
           <aside className="space-y-4 md:col-span-1">
             <nav className="flex flex-col gap-3">
               {/* <Link
-								className="block px-4 py-2 text-start font-medium text-sm hover:bg-stone-100 dark:hover:bg-white/10"
+								className="block px-4 py-2 text-start font-medium text-sm hover:bg-zinc-100 dark:hover:bg-white/10"
 								to="/works"
 							>
 								Works
@@ -73,24 +73,24 @@ export default function Index({ loaderData }: Route.ComponentProps) {
                 <Dialog.Trigger asChild>
                   <button
                     type="button"
-                    className="block cursor-pointer px-4 py-2 text-start font-medium text-sm hover:bg-stone-100 dark:hover:bg-white/10"
+                    className="block cursor-pointer px-4 py-2 text-start font-medium text-sm hover:bg-zinc-100 dark:hover:bg-white/10"
                   >
                     Contact
                   </button>
                 </Dialog.Trigger>
                 <Dialog.Portal>
                   <Dialog.Overlay className="fixed inset-0 bg-black/40" />
-                  <Dialog.Content className="-translate-x-1/2 -translate-y-1/2 fixed top-1/2 left-1/2 w-[min(90vw,420px)] border border-stone-200 bg-white p-6 shadow-lg dark:border-stone-700 dark:bg-stone-900">
+                  <Dialog.Content className="-translate-x-1/2 -translate-y-1/2 fixed top-1/2 left-1/2 w-[min(90vw,420px)] border border-zinc-200 bg-white p-6 shadow-lg dark:border-zinc-700 dark:bg-zinc-900">
                     <Dialog.Title className="font-semibold text-lg">
                       Contact me
                     </Dialog.Title>
-                    <Dialog.Description className="mt-2 text-mono text-sm text-stone-600 dark:text-stone-300">
+                    <Dialog.Description className="mt-2 text-mono text-sm text-zinc-600 dark:text-zinc-300">
                       projects · collaborations · discussion
                     </Dialog.Description>
 
                     <div className="mt-4 space-y-3 text-sm">
                       <div className="flex items-center">
-                        <EnvelopeClosedIcon className="me-4 h-4 w-4 text-stone-900 dark:text-stone-50" />
+                        <EnvelopeClosedIcon className="me-4 h-4 w-4 text-zinc-900 dark:text-zinc-50" />
                         <a
                           className="hover:underline"
                           target="_blank"
@@ -102,7 +102,7 @@ export default function Index({ loaderData }: Route.ComponentProps) {
                       </div>
 
                       <div className="flex items-center">
-                        <GitHubLogoIcon className="me-4 h-4 w-4 text-stone-900 dark:text-stone-50" />
+                        <GitHubLogoIcon className="me-4 h-4 w-4 text-zinc-900 dark:text-zinc-50" />
                         <a
                           className="hover:underline"
                           target="_blank"
@@ -114,7 +114,7 @@ export default function Index({ loaderData }: Route.ComponentProps) {
                       </div>
 
                       <div className="flex items-center">
-                        <FaXTwitter className="mt-0.5 me-4 h-5 w-4 text-stone-900 dark:text-stone-50" />
+                        <FaXTwitter className="mt-0.5 me-4 h-5 w-4 text-zinc-900 dark:text-zinc-50" />
                         <a
                           className="hover:underline"
                           target="_blank"
@@ -141,9 +141,9 @@ export default function Index({ loaderData }: Route.ComponentProps) {
               </Dialog.Root>
             </nav>
 
-            <div className="border-stone-100 border-t pt-4 dark:border-stone-800">
-              <div className="text-stone-500 text-xs">Technology stack</div>
-              <div className="mt-2 font-mono text-sm text-stone-700 dark:text-stone-200">
+            <div className="border-zinc-100 border-t pt-4 dark:border-zinc-800">
+              <div className="text-zinc-500 text-xs">Technology stack</div>
+              <div className="mt-2 font-mono text-sm text-zinc-700 dark:text-zinc-200">
                 Ruby · Rails · TypeScript · Go
               </div>
             </div>

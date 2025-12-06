@@ -1,4 +1,6 @@
 packages:
-  - "." # <--- ADD THIS LINE
+  - .
+
 onlyBuiltDependencies:
+  - esbuild
   - workerd
