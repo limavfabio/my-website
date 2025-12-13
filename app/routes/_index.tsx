@@ -1,4 +1,4 @@
-import { Dialog } from "radix-ui";
+import { Dialog } from "@base-ui/react/dialog";
 import { Link } from "react-router";
 import { GitHubLogoIcon, EnvelopeClosedIcon } from "@radix-ui/react-icons";
 import { FaXTwitter } from "react-icons/fa6";
@@ -68,19 +68,17 @@ export default function Index({ loaderData }: Route.ComponentProps) {
 								Works
 							</Link> */}
 
-              {/* Contact modal using Radix Dialog */}
+              {/* Contact modal using Base UI Dialog */}
               <Dialog.Root>
-                <Dialog.Trigger asChild>
-                  <button
-                    type="button"
-                    className="block cursor-pointer px-4 py-2 text-start font-medium text-sm hover:bg-zinc-100 dark:hover:bg-white/10"
-                  >
-                    Contact
-                  </button>
+                <Dialog.Trigger
+                  type="button"
+                  className="block cursor-pointer px-4 py-2 text-start font-medium text-sm hover:bg-zinc-100 dark:hover:bg-white/10"
+                >
+                  Contact
                 </Dialog.Trigger>
                 <Dialog.Portal>
-                  <Dialog.Overlay className="fixed inset-0 bg-black/40" />
-                  <Dialog.Content className="-translate-x-1/2 -translate-y-1/2 fixed top-1/2 left-1/2 w-[min(90vw,420px)] border border-zinc-200 bg-white p-6 shadow-lg dark:border-zinc-700 dark:bg-zinc-900">
+                  <Dialog.Backdrop className="fixed inset-0 bg-black/40" />
+                  <Dialog.Popup className="-translate-x-1/2 -translate-y-1/2 fixed top-1/2 left-1/2 w-[min(90vw,420px)] border border-zinc-200 bg-white p-6 shadow-lg dark:border-zinc-700 dark:bg-zinc-900">
                     <Dialog.Title className="font-semibold text-lg">
                       Contact me
                     </Dialog.Title>
@@ -127,16 +125,14 @@ export default function Index({ loaderData }: Route.ComponentProps) {
                     </div>
 
                     <div className="mt-6 text-right">
-                      <Dialog.Close asChild>
-                        <button
-                          type="button"
-                          className="cursor-pointer border px-3 py-1 text-sm"
-                        >
-                          Close
-                        </button>
+                      <Dialog.Close
+                        type="button"
+                        className="cursor-pointer border px-3 py-1 text-sm"
+                      >
+                        Close
                       </Dialog.Close>
                     </div>
-                  </Dialog.Content>
+                  </Dialog.Popup>
                 </Dialog.Portal>
               </Dialog.Root>
             </nav>
